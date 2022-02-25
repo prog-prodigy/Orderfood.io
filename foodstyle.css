@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&family=Roboto+Serif:wght@200&family=Sacramento&display=swap');
+
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+
+}
+a,
+a:hover{
+    text-decoration: none;
+    color: var(--white-color);
+}
+a{
+    color: var(--primary-color);
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:  #fff;;
+    --secondary-color: #e6c799;
+    --text-color: #a34603;
+    --black-color: #000;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto Serif', sans-serif;
+}
+
+/* general body */
+
+html{
+    scroll-behavior: smooth;    
+}
+
+body{
+    font-family: var(--primary-font);
+    
+}
+h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+h2{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+hr{
+    border: 6px dotted #eaf6f6;
+    border-bottom: none;
+    border-radius: 8px;
+    width: 4%;
+    margin: 4em auto;
+}
+h1:hover{
+    color: rgba(255, 0, 0, 0.664);
+    cursor:default;
+}
+/* home= header+intro+container */
+.Home{
+    background-image: url('bg-2.jpg');
+    background-color: rgba(19, 17, 17, 0.452);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+
+
+/* header */
+.navbar-custom{
+    background-color: #171010;
+}
+
+/* intro */
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 7em;
+
+}
+.title,
+.subtitle{
+    margin: 0.5em 2em;
+
+}
+.input{
+    max-width: 500px;
+    margin: auto;
+}
+.subtitle{
+    max-width: 700px;
+    margin: auto;
+}
+.title{
+    text-transform:uppercase;
+}
+
+
+
+/* our plans */
+.pro-title{
+    padding-top: 2em;
+}
+.card:hover {
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden; 
+    will-change: transform;
+    box-shadow: 0 0 1rem rgba(192, 191, 191, 0.75) !important;
+  }
+  .card h2{
+      color: #191a19 ;
+  }
+  .pro{
+      background-color: #171010;
+      margin-top: 0;
+  }
+  
+  /* order */
+.order-now{
+    /* height: 1vh; */
+}
+
+
+.card-img-top{
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5em ;
+}
+.card:hover{
+    border-radius: 0.5em ;   
+}
+.owl-prev{
+    left: -30px;
+
+}    
+.owl-next{
+    right: -30px;
+}
+.owl-next,
+.owl-prev{
+    position: absolute;
+    top: 20%;
+}
+.owl-next span,
+.owl-prev span{
+    font-size: 3em;
+    color: var(--secondary-color);    
+}
+.order-now-container{
+    padding: 5em 3em;
+}
+/* download section */
+.phone-img{
+    max-height: 100vh;
+    
+}
+.download-now{
+    
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: #333456;
+}
+.download-title{
+    padding: 2em 2em;
+    text-align: left;
+    
+}
+.row{
+    align-items: center;
+}
+
+
+/* end */
+.end>h1{
+margin-bottom: 3em ;
+}
+.end{
+    height: 100vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    color: var(--white-color);
+    background-color:#171010;
+}
+.end-list li{
+    list-style: none;
+}
+.fa{
+    margin: 0 1em;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+footer p{
+   margin-bottom: 0px;
+   background-color: var(--black-color);
+   font-size: 0.9em;
+}
