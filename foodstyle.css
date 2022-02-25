@@ -23,6 +23,9 @@ a:hover{
 a{
     color: var(--primary-color);
 }
+p{
+    margin-bottom: 0;
+}
 ul,
 ol{
     margin: 0;
@@ -46,6 +49,7 @@ html{
 
 body{
     font-family: var(--primary-font);
+    min-height: 100vh;
     
 }
 h1{
@@ -62,7 +66,7 @@ hr{
     border-bottom: none;
     border-radius: 8px;
     width: 4%;
-    margin: 4em auto;
+    margin: 3em auto;
 }
 h1:hover{
     color: rgba(255, 0, 0, 0.664);
@@ -86,7 +90,7 @@ h1:hover{
 
 /* header */
 .navbar-custom{
-    background-color: #171010;
+    background-color: #171010e0;
 }
 
 /* intro */
@@ -191,29 +195,29 @@ h1:hover{
 
 
 /* end */
-.end>h1{
-margin-bottom: 3em ;
-}
-.end{
-    height: 100vh;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    color: var(--white-color);
-    background-color:#171010;
-}
-.end-list li{
+.end-list{
     list-style: none;
 }
-.fa{
-    margin: 0 1em;
-}
+
 .social{
     display: flex;
     justify-content: center;
 }
-footer p{
-   margin-bottom: 0px;
-   background-color: var(--black-color);
-   font-size: 0.9em;
-   text-align:center;
+.social-links>li{
+    list-style: none;
 }
+.social a{
+    margin: 0 1.2em;
+}
+.end{
+    min-height: 100vh;
+}
+.end-container{
+    padding-top: 5em;
+}
+/* footer */
+    footer{
+        margin-top: auto;
+        background-color: #000;
+    
+    }
